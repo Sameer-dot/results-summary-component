@@ -9,11 +9,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -28,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-results-summary-component-leFegcOcUX)
 - Live Site URL: [Add live site URL here](https://65d8deec24fc2a39554098a9--poetic-malabi-354efb.netlify.app/)
 
 ### Built with
