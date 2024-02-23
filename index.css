@@ -1,0 +1,207 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 650px;
+  border-radius: 1.5rem;
+  background-color: var(--White);
+  box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  width: 50%;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result .title {
+  color: var(--Light-lavender);
+  margin-bottom: 1rem;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle h1 {
+  color: var(--White);
+  font-size: 4rem;
+}
+
+.circle p {
+  color: var(--Light-lavender);
+}
+
+.result b {
+  color: var(--White);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.info {
+  width: 220px;
+  color: var(--Light-lavender);
+}
+
+.summary {
+  width: 50%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary .title {
+  color: black;
+  font-weight: 800;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+}
+
+.row:nth-child(1) {
+  background: hsla(0, 100%, 67%, .2);
+}
+
+.row:nth-child(1) .row-content b {
+  color: var(--Light-red);
+}
+
+
+.row:nth-child(2) {
+  background: hsla(39, 100%, 56%, .2);
+}
+
+.row:nth-child(2) .row-content b {
+  color: var(--Orangey-yellow);
+}
+
+.row:nth-child(3) {
+  background: hsla(166, 100%, 37%, .2);
+}
+
+.row:nth-child(3) .row-content b {
+  color: var(--Green-teal);
+}
+
+.row:nth-child(4) {
+  background: hsla(234, 85%, 45%, .2);
+}
+
+.row:nth-child(4) .row-content b {
+  color: var(--Cobalt-blue);
+}
+
+.row-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row p {
+  color: gray;
+}
+
+.row p b {
+  color: var(--Dark-gray-blue);
+}
+
+.btn {
+  margin-top: auto;
+  padding: 16px;
+  border: none;
+  border-radius: 32px;
+  background: var(--Dark-gray-blue);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--White);
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    align-items: flex-start;
+    background-color: white;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .result {
+    width: 100%;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .result .info {
+    width: 280px;
+  }
+
+  .summary {
+    width: 100%;
+  }
+}
